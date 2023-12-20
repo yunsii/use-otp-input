@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vp-local-navCtn svg {
+  display: inline;
+  vertical-align: unset;
+}
+
+.markdown-body li {
+  list-style: disc;
+}
+
+.markdown-body img {
+  display: inline-block;
+}
