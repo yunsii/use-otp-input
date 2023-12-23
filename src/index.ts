@@ -1,2 +1,2 @@
 export { default as Button } from '@/components/Button'
-export { default as useConsole } from '@/hooks/useConsole'
+export { default as useOTPInput } from '@/hooks/useOTPInput'

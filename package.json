@@ -1,6 +1,6 @@
 {
-  "name": "pkg-name",
-  "description": "",
+  "name": "react-otp-input-pro",
+  "description": "🚀 Pro OTP Input Component for React",
   "version": "0.0.0",
   "author": "Yuns <yuns.xie@qq.com>",
   "license": "MIT",
@@ -11,17 +11,26 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
+  "keywords": [
+    "react",
+    "hooks",
+    "otp",
+    "one-time-password",
+    "one-time-code",
+    "input",
+    "component",
+    "react-hooks"
+  ],
   "funding": [
     "https://opencollective.com/yuns",
     "https://afdian.net/@yunslove"
   ],
-  "homepage": "https://github.com/yunsii/pkg-name#readme",
+  "homepage": "https://github.com/yunsii/react-otp-input-pro#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yunsii/pkg-name"
+    "url": "https://github.com/yunsii/react-otp-input-pro"
   },
-  "bugs": "https://github.com/yunsii/pkg-name/issues",
+  "bugs": "https://github.com/yunsii/react-otp-input-pro/issues",
   "scripts": {
     "dev": "vite --config vite.docs.config.ts",
     "build:docs": "tsc && vite build --config vite.docs.config.ts",
@@ -96,5 +105,8 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
+  },
+  "dependencies": {
+    "selection-extra": "^0.0.6"
   }
 }

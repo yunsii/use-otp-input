@@ -11,7 +11,7 @@ const theme: Theme = (props) => {
   const { loadedData, loadState } = props
 
   const DocTheme = createTheme({
-    logo: <div style={{ fontSize: '20px' }}>pkg-name</div>,
+    logo: <div style={{ fontSize: '20px' }}>react-otp-input-pro</div>,
     topNavs: [
       {
         label: 'Components',
@@ -24,8 +24,8 @@ const theme: Theme = (props) => {
         activeIfMatch: '/hooks',
       },
       {
-        label: 'pkg-name',
-        href: 'https://github.com/yunsii/starter-vite-react-library',
+        label: 'react-otp-input-pro',
+        href: 'https://github.com/yunsii/react-otp-input-pro',
       },
     ],
     sideNavs: (ctx) => {

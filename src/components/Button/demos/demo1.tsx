@@ -3,7 +3,7 @@
  * @description Button description
  */
 
-import { Button } from 'pkg-name'
+import { Button } from 'react-otp-input-pro'
 import React from 'react'
 
 export default function Demo() {

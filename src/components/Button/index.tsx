@@ -6,5 +6,9 @@ export interface IButtonProps
 export default function Button(props: IButtonProps) {
   const { children, ...rest } = props
 
-  return <button {...rest}>{children}</button>
+  return (
+    <div>
+      <button {...rest}>{children}</button>
+    </div>
+  )
 }

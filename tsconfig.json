@@ -21,7 +21,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "pkg-name": ["./src"]
+      "react-otp-input-pro": ["./src"]
     }
   },
   "include": ["src"],
