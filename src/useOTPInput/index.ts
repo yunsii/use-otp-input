@@ -41,7 +41,7 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
     (nextValue: string) => {
       if (typeof value !== 'undefined') {
         if (!onChange) {
-          throw new Error(`invalid onChange property`)
+          throw new Error(`Invalid onChange property`)
         } else {
           onChange(nextValue.slice(0, length))
         }
@@ -315,7 +315,10 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
           }
         }
       },
-    } satisfies React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
+    } satisfies React.DetailedHTMLProps<
+      React.InputHTMLAttributes<HTMLInputElement>,
+      HTMLInputElement
+    >
 
     return result
   }
@@ -329,13 +332,13 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
     },
     setInput: (nextValue: string) => {
       const normalizedValue =
-          nextValue && normalizeValue
-            ? normalizeValue(nextValue, mergedValue.join(''))
-            : nextValue
+        nextValue && normalizeValue
+          ? normalizeValue(nextValue, mergedValue.join(''))
+          : nextValue
       mergedOnChange(normalizedValue)
     },
     getInput: () => {
       return mergedValue.join('')
-    }
+    },
   }
 }
