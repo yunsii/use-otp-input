@@ -1,7 +1,7 @@
 {
   "name": "use-otp-input",
   "description": "🚀 Awesome React Hook for One-time password (OTP) Input",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Yuns <yuns.xie@qq.com>",
   "license": "MIT",
   "type": "module",
