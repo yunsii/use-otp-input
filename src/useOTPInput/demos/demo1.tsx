@@ -74,7 +74,7 @@ export default function Demo() {
 
   return (
     <div className={`[&>div]:my-3`}>
-      <div className='flex gap-2'>
+      <div className='flex gap-2 flex-wrap'>
         <button
           onClick={() => {
             setInputValue('')
@@ -106,7 +106,7 @@ export default function Demo() {
           Toggle OTP inputs type to {nextType}
         </button>
       </div>
-      <div className='flex gap-2'>
+      <div className='flex gap-2 flex-wrap'>
         {otpInput1.inputProps.map((inputItemProps, index, array) => {
           return (
             <input
@@ -123,7 +123,7 @@ export default function Demo() {
           (Number only)
         </span>
       </div>
-      <div className='flex gap-2 items-center'>
+      <div className='flex gap-2 items-center flex-wrap'>
         {otpInput2.inputProps.map((inputItemProps, index, array) => {
           return (
             <React.Fragment key={index}>
@@ -137,7 +137,7 @@ export default function Demo() {
           )
         })}
       </div>
-      <div className='flex gap-2 items-center'>
+      <div className='flex gap-2 items-center flex-wrap'>
         {otpInput3.inputProps.map((inputItemProps, index, array) => {
           return (
             <React.Fragment key={index}>
@@ -161,7 +161,7 @@ export default function Demo() {
         })}
       </div>
       <hr />
-      <div className='flex gap-2'>
+      <div className='flex gap-2 flex-wrap'>
         <input
           value={inputValue}
           className='border rounded px-2'
