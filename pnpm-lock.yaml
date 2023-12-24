@@ -30,7 +30,7 @@ devDependencies:
     version: 17.4.4
   '@jannajs/lint':
     specifier: ^2.3.9
-    version: 2.3.9(@antfu/eslint-config-react@0.35.3)(@antfu/eslint-config@0.35.3)(@commitlint/cli@17.6.6)(@commitlint/config-conventional@17.6.6)(@commitlint/types@17.4.4)(eslint-config-prettier@8.8.0)(eslint@8.28.0)(lint-staged@13.2.3)(prettier@2.7.1)
+    version: 2.3.9(@antfu/eslint-config-react@0.35.3)(@antfu/eslint-config@0.35.3)(@commitlint/cli@17.6.6)(@commitlint/config-conventional@17.6.6)(@commitlint/types@17.4.4)(eslint-config-prettier@8.8.0)(eslint@8.28.0)(lint-staged@13.2.3)(prettier@3.1.1)
   '@mdx-js/react':
     specifier: ^2.3.0
     version: 2.3.0(react@18.2.0)
@@ -83,8 +83,8 @@ devDependencies:
     specifier: ^8.4.28
     version: 8.4.28
   prettier:
-    specifier: ^2.7.1
-    version: 2.7.1
+    specifier: ^3.1.1
+    version: 3.1.1
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -1140,7 +1140,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /@jannajs/lint@2.3.9(@antfu/eslint-config-react@0.35.3)(@antfu/eslint-config@0.35.3)(@commitlint/cli@17.6.6)(@commitlint/config-conventional@17.6.6)(@commitlint/types@17.4.4)(eslint-config-prettier@8.8.0)(eslint@8.28.0)(lint-staged@13.2.3)(prettier@2.7.1):
+  /@jannajs/lint@2.3.9(@antfu/eslint-config-react@0.35.3)(@antfu/eslint-config@0.35.3)(@commitlint/cli@17.6.6)(@commitlint/config-conventional@17.6.6)(@commitlint/types@17.4.4)(eslint-config-prettier@8.8.0)(eslint@8.28.0)(lint-staged@13.2.3)(prettier@3.1.1):
     resolution: {integrity: sha512-Pc4fSKDRDDzAFe6joz951ew2HFsQdugBRLJkqpJRvH12PIUabUpiXUva8udTCk1KC/yF6/mjnyc+Ecdw3d7sVQ==}
     hasBin: true
     peerDependencies:
@@ -1172,7 +1172,7 @@ packages:
       lint-staged: 13.2.3
       mrm-core: 7.0.0
       os-locale: 5.0.0
-      prettier: 2.7.1
+      prettier: 3.1.1
     dev: true
 
   /@jridgewell/gen-mapping@0.1.1:
@@ -6510,6 +6510,12 @@ packages:
   /prettier@2.7.1:
     resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /prettier@3.1.1:
+    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
