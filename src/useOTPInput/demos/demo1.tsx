@@ -3,7 +3,7 @@
  * @description useOTPInput description
  */
 
-import { useOTPInput } from 'react-otp-input-pro'
+import { useOTPInput } from 'use-otp-input'
 import React from 'react'
 
 export default function Demo() {
@@ -17,12 +17,12 @@ export default function Demo() {
 
   return (
     <div className={`[&>div]:my-3`}>
-      <div>
+      <div className='flex gap-2'>
         {otpInput1.inputProps.map((inputItemProps, index) => {
           return (
             <input
               key={index}
-              className='outline max-w-[2em]'
+              className='border rounded outline-none w-10 h-10 text-center'
               {...inputItemProps}
             />
           )

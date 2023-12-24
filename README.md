@@ -1,8 +1,8 @@
-# react-otp-input-pro
+# use-otp-input
 
-[![NPM version](https://img.shields.io/npm/v/react-otp-input-pro?color=a1b858&label=)](https://www.npmjs.com/package/react-otp-input-pro)
+[![NPM version](https://img.shields.io/npm/v/use-otp-input?color=a1b858&label=)](https://www.npmjs.com/package/use-otp-input)
 
-🚀 Pro OTP Input Component for React
+🚀 React Hook for OTP Input
 
 ## Build & Publish
 

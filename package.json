@@ -1,5 +1,5 @@
 {
-  "name": "react-otp-input-pro",
+  "name": "use-otp-input",
   "description": "🚀 Pro OTP Input Component for React",
   "version": "0.0.0",
   "author": "Yuns <yuns.xie@qq.com>",
@@ -25,12 +25,12 @@
     "https://opencollective.com/yuns",
     "https://afdian.net/@yunslove"
   ],
-  "homepage": "https://github.com/yunsii/react-otp-input-pro#readme",
+  "homepage": "https://github.com/yunsii/use-otp-input#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yunsii/react-otp-input-pro"
+    "url": "https://github.com/yunsii/use-otp-input"
   },
-  "bugs": "https://github.com/yunsii/react-otp-input-pro/issues",
+  "bugs": "https://github.com/yunsii/use-otp-input/issues",
   "scripts": {
     "dev": "vite --config vite.docs.config.ts",
     "build:docs": "tsc && vite build --config vite.docs.config.ts",

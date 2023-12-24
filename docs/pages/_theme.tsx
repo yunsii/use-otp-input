@@ -11,21 +11,11 @@ const theme: Theme = (props) => {
   const { loadedData, loadState } = props
 
   const DocTheme = createTheme({
-    logo: <div style={{ fontSize: '20px' }}>react-otp-input-pro</div>,
+    logo: <div style={{ fontSize: '20px' }}>use-otp-input</div>,
     topNavs: [
       {
-        label: 'Components',
-        path: '/components',
-        activeIfMatch: '/components',
-      },
-      {
-        label: 'Hooks',
-        path: '/hooks',
-        activeIfMatch: '/hooks',
-      },
-      {
-        label: 'react-otp-input-pro',
-        href: 'https://github.com/yunsii/react-otp-input-pro',
+        label: 'use-otp-input',
+        href: 'https://github.com/yunsii/use-otp-input',
       },
     ],
     sideNavs: (ctx) => {
