@@ -43,13 +43,13 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
         if (!onChange) {
           throw new Error(`invalid onChange property`)
         } else {
-          onChange(nextValue)
+          onChange(nextValue.slice(0, length))
         }
         return
       }
-      setInternalValue(nextValue)
+      setInternalValue(nextValue.slice(0, length))
     },
-    [onChange, value],
+    [length, onChange, value],
   )
 
   const selectInput = (index: number, caretIndex?: number) => {
@@ -94,10 +94,7 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
       throw new Error(`Unexpected input index of [${index}]`)
     }
 
-    const result: React.DetailedHTMLProps<
-      React.InputHTMLAttributes<HTMLInputElement>,
-      HTMLInputElement
-    > = {
+    const result = {
       ref: (ref) => {
         inputRefs.current[index] = ref
       },
@@ -318,7 +315,7 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
           }
         }
       },
-    }
+    } satisfies React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
 
     return result
   }
@@ -330,5 +327,15 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
     clearInput: () => {
       mergedOnChange('')
     },
+    setInput: (nextValue: string) => {
+      const normalizedValue =
+          nextValue && normalizeValue
+            ? normalizeValue(nextValue, mergedValue.join(''))
+            : nextValue
+      mergedOnChange(normalizedValue)
+    },
+    getInput: () => {
+      return mergedValue.join('')
+    }
   }
 }

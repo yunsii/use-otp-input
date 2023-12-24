@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/use-otp-input?color=a1b858&label=)](https://www.npmjs.com/package/use-otp-input)
 
-🚀 React Hook for OTP Input
+🚀 Awesome React Hook for OTP Input
 
 ## Build & Publish
 

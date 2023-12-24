@@ -1,6 +1,6 @@
 {
   "name": "use-otp-input",
-  "description": "🚀 Pro OTP Input Component for React",
+  "description": "🚀 Awesome React Hook for OTP Input",
   "version": "0.0.0",
   "author": "Yuns <yuns.xie@qq.com>",
   "license": "MIT",
@@ -18,7 +18,6 @@
     "one-time-password",
     "one-time-code",
     "input",
-    "component",
     "react-hooks"
   ],
   "funding": [
