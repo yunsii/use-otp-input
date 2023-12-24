@@ -235,8 +235,8 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
 
           if (event.ctrlKey && typeof selectionStart === 'number') {
             event.preventDefault()
-            const nextMergedValue = [...mergedValue]
-            nextMergedValue.slice(0, index + selectionStart)
+            let nextMergedValue = [...mergedValue]
+            nextMergedValue = nextMergedValue.slice(0, index + selectionStart)
             mergedOnChange(nextMergedValue.join(''))
             return
           }
