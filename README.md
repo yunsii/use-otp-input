@@ -6,6 +6,8 @@ English | [简体中文](./README.zh-CN.md)
 
 🚀 Awesome React Hook for One-time password (OTP) Input
 
+[Live Demo](https://use-otp-input.vercel.app)
+
 ## Features
 
 - 🦄 Input more intuitive, just like [plain input element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input), including paste text
