@@ -100,12 +100,13 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
       },
       value: mergedValue[index] ?? '',
       onChange: (event) => {
+        const eventValue = event.target.value.trim()
         let nextMergedValue = [...mergedValue]
-        if (event.target.value.length >= 2) {
-          nextMergedValue.splice(index, 1, ...event.target.value.split(''))
+        if (eventValue.length >= 2) {
+          nextMergedValue.splice(index, 1, ...eventValue.split(''))
           nextMergedValue = nextMergedValue.slice(0, length)
         } else {
-          nextMergedValue[index] = event.target.value
+          nextMergedValue[index] = eventValue
         }
         const nextValue = nextMergedValue.join('')
 
@@ -352,10 +353,14 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
       mergedOnChange('')
     },
     setInput: (nextValue: string) => {
+      const internalValue = nextValue
+        .split('')
+        .map((item) => item.trim())
+        .join('')
       const normalizedValue =
-        nextValue && normalizeValue
-          ? normalizeValue(nextValue, mergedValue.join(''))
-          : nextValue
+        internalValue && normalizeValue
+          ? normalizeValue(internalValue, mergedValue.join(''))
+          : internalValue
       mergedOnChange(normalizedValue)
     },
     getInput: () => {
