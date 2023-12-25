@@ -184,7 +184,7 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
         }
       },
       onKeyDown: (event) => {
-        const selectionStart = event.target.selectionStart
+        const selectionStart = event.currentTarget.selectionStart
 
         if (event.key === 'Backspace') {
           if (
@@ -255,7 +255,7 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
        * onKeyUp 时 selectionStart 是按下后的位置
        */
       onKeyUp: (event) => {
-        const selectionStart = event.target.selectionStart
+        const selectionStart = event.currentTarget.selectionStart
         if (
           event.key === 'ArrowLeft' &&
           keyDownDataRef.current?.inputIndex === index &&
