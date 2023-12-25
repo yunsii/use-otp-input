@@ -119,7 +119,7 @@ export default function Demo() {
             />
           )
         })}
-        <span className='flex items-end text-xs text-gray-400'>
+        <span className='flex items-end text-xs text-gray-400 select-none'>
           (Number only)
         </span>
       </div>
@@ -132,7 +132,9 @@ export default function Demo() {
                 type={type}
                 {...inputItemProps}
               />
-              {index + 1 !== array.length && <span>💎</span>}
+              {index + 1 !== array.length && (
+                <span className='select-none'>💎</span>
+              )}
             </React.Fragment>
           )
         })}
@@ -155,7 +157,9 @@ export default function Demo() {
                 }}
                 type={type}
               />
-              {index + 1 !== array.length && <span>✨</span>}
+              {index + 1 !== array.length && (
+                <span className='select-none'>✨</span>
+              )}
             </React.Fragment>
           )
         })}

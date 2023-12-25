@@ -240,6 +240,27 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
         }
 
         if (
+          event.key === 'Home' &&
+          !event.ctrlKey &&
+          !event.shiftKey &&
+          !event.altKey
+        ) {
+          event.preventDefault()
+          selectInputStart(0)
+        }
+
+        if (
+          event.key === 'End' &&
+          !event.ctrlKey &&
+          !event.shiftKey &&
+          !event.altKey
+        ) {
+          event.preventDefault()
+          const targetIndex = mergedValue.length - 1
+          selectInputAfter(targetIndex)
+        }
+
+        if (
           // 暂时仅处理 Caret 的情况
           window.getSelection()?.type === 'Caret' &&
           typeof selectionStart === 'number'
