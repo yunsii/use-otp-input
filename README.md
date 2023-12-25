@@ -12,7 +12,7 @@ English | [简体中文](./README.zh-CN.md)
 
 - 🦄 Input more intuitive, just like [plain input element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input), including paste text
 - ✨ Support `Backspace` and `Delete` keys, even shortcut with `Ctrl` key
-- 🎈 Support move caret by `ArrowLeft` and `ArrowRight` keys
+- 🎈 Support move caret by `Home`, `End`, `ArrowLeft` and `ArrowRight` keys
 
 ## Build & Publish
 
