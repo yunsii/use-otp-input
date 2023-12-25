@@ -1,5 +1,11 @@
 # use-otp-input
 
+## 0.0.3
+
+### Patch Changes
+
+- 🐛 fix: detect no change of value
+
 ## 0.0.2
 
 ### Patch Changes
