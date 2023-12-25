@@ -116,8 +116,8 @@ export default function useOTPInput(options: UseOTPInputOptions = {}) {
 
         mergedOnChange(normalizedValue)
 
-        // 前后值长度一致表示新输入字符无效
-        if (normalizedValue.length === mergedValue.length) {
+        // 前后值一致表示新输入字符无效
+        if (normalizedValue === mergedValue.join('')) {
           // 当值无效时如果光标在输入字符之前还是会导致光标后移，
           // 因此如果输入无效需要修复光标位置，
           // 能见一瞬间的光标闪烁
