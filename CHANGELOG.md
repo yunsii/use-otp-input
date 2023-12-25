@@ -1,5 +1,11 @@
 # use-otp-input
 
+## 0.0.4
+
+### Patch Changes
+
+- 🐛 fix: disable input whitespace
+
 ## 0.0.3
 
 ### Patch Changes
